@@ -1,0 +1,116 @@
+
+header{
+    text-align:center;
+    padding:55px 2em 20px 2em;
+    background:linear-gradient( #b1d814,#61d6fa 70%); 
+  
+
+}
+h1{
+    font-size: 50px;
+    color:rgb(109, 63, 236);
+    text-shadow: 1px 1px white, -1px -1px #444;
+    padding:10px  30px;
+    margin:20px;
+    
+    
+}
+.welcome{
+    display:inline-block;
+    color:rgb(200, 36, 241);
+    background:linear-gradient(#e7eed5 20%, #56adc5 100%); 
+    margin-bottom:10px;
+    padding:5px 10px;
+    font-size:26px;
+
+}
+
+body {
+    background:linear-gradient(#61d6fa 50%, #b1d814 100%); 
+    text-align:left;
+ 
+    padding: 10mm;
+    margin: 10mm;
+    margin-top: 2px;
+}
+#login_area,#signup{
+    padding:40px 50px;
+    display:inline-block;
+    background:linear-gradient(#e7eed5 20%, #56adc5 100%); 
+    font-style:italic;
+    font-weight:bold;
+  font-size:20px;
+    text-align:center;
+    width:30%;
+
+}
+#login{
+    color:rgb(65, 65, 253);
+    font-size:35px;
+    
+}
+.login{
+    
+    display:block;
+    margin:0px;
+    padding-left: 0px;
+
+  
+    color:rgb(124, 74, 136);
+    font-size:28px;
+    
+    
+}
+#name_box,#signup_textbox{
+    padding-left: 68px;
+}
+#address{
+    padding-left: 53px;
+}
+#ages{
+    display:inline-block;
+    padding-left: 87px;
+    text-align: left;
+}
+#channel,#whole{
+    text-align:center;
+}
+#loginButton{
+    font-weight: bold;
+    font-size:15px;
+    color:blue;
+    border:0.5px solid blue;
+    
+}
+#loginButtonhover{
+
+}
+#signup_button{
+    font-weight: bold;
+    text-align:right;
+}
+h2 {
+    text-align:center;
+    
+    color: rgb(47, 106, 218);
+ 
+}
+h3{
+    color:rgb(82, 53, 248);
+    text-align:center;
+}
+
+p1{
+    font-size:10mm;
+}
+
+
+
+
+}
+.button{
+    font-size:10mm;
+}
+img {
+    height: 250px;
+}

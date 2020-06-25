@@ -1,0 +1,5 @@
+CREATE DATABASE restaurant_db;
+GRANT ALL ON restaurant_db.*TO 'bade'@'localhost' IDENTIFIED BY 'restaurant';
+GRANT ALL ON restaurant_db.*TO 'bade'@'127.0.0.1' IDENTIFIED BY 'restaurant';
+
+
