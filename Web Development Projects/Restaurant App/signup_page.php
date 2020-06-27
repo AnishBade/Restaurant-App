@@ -1,8 +1,14 @@
 <?php 
+session_start();
 require_once 'pdo.php';
 //$res=false;
+if(isset($_POST['cancel'])){
+    header('Location:index.php');
+    return;
+}
 if(isset($_POST['create'])){
 if(isset($_POST['customer_name']) && isset($_POST['phone_number']) && isset($_POST['email_address']) && isset($_POST['address']) && isset($_POST['age'])){
+    if(strlen($_POST['customer_name']>1) && strlen($_POST['phone_number'])>1 && strlen($_POST['email_address'])>1 && strlen($_POST['address'])>1 && strlen($_POST['age'])>1){
     
     $sql="insert into customers(Name,Email,Address,Phone_number,Age) values(:nam,:email,:add,:numbe,:ag)";
     $stmt=$pdo->prepare($sql);
@@ -14,9 +20,12 @@ if(isset($_POST['customer_name']) && isset($_POST['phone_number']) && isset($_PO
         ':add'=>$_POST['address']));
 
  }
+
+// else{
+
+//     $_SESSION['failure']='All fields must be filled';
+// }
 }
-if(isset($_POST['cancel'])){
-    header('Location:index.php');
 }
 /*if($res){
     ?>
@@ -45,6 +54,12 @@ if(isset($_POST['cancel'])){
             <h1>CREATE YOUR NEW ACCOUNT</h1>
         </header>
         <section id="whole">
+         <?php 
+    //    if(isset($_SESSION['failure'])){
+    //        echo "<p style=color:red>".$_SESSION['failure']."</p>";
+    //        unset($_SESSION['failure']);
+    //    }
+       ?>
             <section id="signup">
         
             <form action="" method="POST">
