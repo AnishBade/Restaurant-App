@@ -89,6 +89,10 @@ body {
     font-weight: bold;
     text-align:right;
 }
+#cancel_button{
+    font-weight: bold;
+    text-align:right;
+}
 h2 {
     text-align:center;
     

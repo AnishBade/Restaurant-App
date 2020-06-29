@@ -4,7 +4,11 @@
         <link rel=stylesheet href="style.css">
         <title>Profile page</title>
         <h3>YOUR PROFILE PAGE</h1>
-            <h1>YOUR NAME </h1>
+            <?php 
+                if(isset($_SESSION['customer_name'])){
+                echo '<h1>'.$_POST['customer_name'].'</h1>';
+                ?>
+                }
     </head>
     <body>
         <p>
