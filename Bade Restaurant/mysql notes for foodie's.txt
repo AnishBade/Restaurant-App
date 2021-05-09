@@ -1,0 +1,14 @@
+CREATE DATABASE foodie's_db;
+GRANT ALL ON foodie's_db.*TO 'bade'@'localhost' IDENTIFIED BY 'restaurant';
+GRANT ALL ON foodie's_db.*TO 'bade'@'127.0.0.1' IDENTIFIED BY 'restaurant';
+
+
+CREATE TABLE costumers (
+   costumer_id INTEGER NOT NULL
+     AUTO_INCREMENT PRIMARY KEY,
+   Name VARCHAR(128),
+   Email VARCHAR(128),
+   Phone INTEGER,
+   Password VARCHAR(128),
+   INDEX(email)
+) ENGINE=InnoDB CHARSET=utf8;
